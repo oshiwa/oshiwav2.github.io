@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Mga Basura | Oshiwa</title>
+	    <link href="https://fonts.googleapis.com/css?family=Grenze+Gotisch:400,900" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: Grenze Gotisch;
+                scroll-behavior: smooth;
+                user-select: none;
+                user-zoom: fixed;
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                background: #cecece;
+                color: #353535;
+                font-size: normal;
+            }
+            a{
+                color: cornsilk;
+                text-decoration: none;
+                font-size: 16px;
+            }
+            p{
+                white-space: pre-line;
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 30px;
+                font-weight: bolder;
+                color: tan;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            header{
+                position: fixed;
+                top: 0;
+                background: #333;
+                width: 100%;
+                z-index: 999;
+            }
+            .menu{
+                display: flex;
+                justify-content: space-between;
+            }
+            .menu h1{
+                text-indent: .5em;
+                color: tan;
+            }
+            .menu button{
+                width: 80px;
+                background: cornsilk;
+                color: #454545;
+                border: inherit;
+                outline: none;
+                padding: 4px;
+            }
+            nav{
+                display: none;
+                z-index: 999;
+            }
+            menu{
+                display: grid;
+                padding: 10px;
+                background: #454545;
+            }
+            menu a{
+                padding: 10px;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 16px;
+            }
+            ul{
+                display: grid;
+                width: 90%;
+                margin: auto;
+                margin-top: 90px;
+                margin-bottom: 30px;
+                grid-template-columns: auto;
+                row-gap: 75px;
+            }
+            li{
+                display: grid;
+                list-style: none;
+                padding: 14px;
+                border: 1px dashed goldenrod;
+                background: #333;
+            }
+            li:hover{
+                transform: scale(1.01);
+                box-shadow: 1px 1px 3px 1px darkgray;
+            }
+            footer{
+                background: #333;
+                color: tan;
+                text-align: center;
+            }
+            footer h3{
+                border-top: 3px solid cornsilk;
+                padding: 14px;
+            }
+            .useful-links{
+                display: grid;
+                background: #333;
+                text-align: left;
+                margin-bottom: 30px;
+                margin-top: 45px;
+            }
+            .useful-links h2{
+                padding: 10px;
+                border-bottom: 3px dashed cornsilk;
+            }
+            .useful-links a{
+                display: grid;
+                padding: 4px;
+                font-size: 16px;
+            }
+            .links{
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 10px;
+            }
+        @media screen and (min-width: 720px){
+            ul{
+                grid-template-columns: 50% 50%;
+                column-gap: 25px;
+                justify-content: space-evenly;
+            }
+            li{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+            <a href="index.html">
+            <h1>Mga Basura</h1>
+            </a>
+            <button onclick="showMenu()">menu</button>
+            </div>
+            <nav id="menu">
+                <menu>
+                    <a href="javascript:void(0)" onclick="alert('Sinusulat ko pa')">About</a>
+                    <a href="mailto:oshiwabusiness@gmail.com">Contact</a>
+                    <a href="javascript:void(0)" onclick="alert('Ginagawa ko pa')">Donate</a>
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <ul>
+                <li>
+                    <p>
+                        Linabanan ang mapaglarong tadhana
+                        
+                        Ibinaon sa lupa mga lumang alaala
+                        
+                        Walang ibang wakas kundi mga tawa
+                        
+                        Ang tanging katanungan
+                        
+                        Nagtapos na nga ba o may karugtong pa?
+                        
+                        Ang kasagutan sinikap hinanap
+                        
+                        Ginalugad apat na sulok at sa wakas ay kaniyang nahanap.
+                        
+                        — Liwanag
+                        
+                        Ang mga sumunod ay hindi niya lubos inasahan
+                        
+                        Tinanggi ng kapalaran ang nahanap niyang kasagutan.
+                        
+                        Dumating ang liwanag subalit hindi rin nagtagal
+                        
+                        Iniwat't hinabol hanggat mapagod - humihingal
+                        
+                        Lumipas ang buwan at hindi pa rin malimutan
+                        
+                        Ipinangako niya't isinumpang 
+                        
+                        Mananatili sa kadiliman.
+                        
+                        — Dilim
+                    </p>
+                    <img src="border-bottom.png">
+                </li>
+                <li>
+                    <p>
+                        Isang maulang gabi
+                        
+                        Walang nakarinig ng kaniyang paghikbi
+                        
+                        Pinilit ipikit ang pagod na mga mata
+                        
+                        Kasabay ng pagtila ng ulan
+                        
+                        Ang pagkubli niya sa kadiliman
+                    </p>
+                    <img src="border-bottom.png">
+                </li>
+                <li>
+                    <p>
+                        Nakahiga sa kaniyang kama 
+                        
+                        May bumulong subalit doon siya ay mag-isa
+                        
+                        Kitilin ang iyong buhay
+                        
+                        Buhay mo'y walang kuwenta
+                        
+                        Namulat kaniyang mga mata
+                        
+                        Bumangon nang nanginginig
+                        
+                        Sabay abot ng nakasabit na lubid
+                        
+                        Ilang saglit at kaniyang iwinika
+                        
+                        Ang kamataya'y hindi parusa
+                    </p>
+                    <img src="border-bottom.png">
+                </li>
+                <li>
+                    <p>
+                        Sinabayan ng ulan ang pagluluksa ng isang basura
+                        
+                        Walang ideya kung ito ba'y isang parusa
+                        
+                        Ang Diyos ba ay nariyan o siya ang may sala?
+                    </p>
+                    <img src="border-bottom.png">
+                </li>
+                <li>
+                    <p>
+                        Isinuko ang kaluluwa sa demonyong nagbigay ng gantimpala
+                        
+                        Ang kapayapaan, kalayaan at kasiyahan
+                        
+                        Sa wakas ay nakuha
+                        
+                        Matagal na hiniling sa Diyos subalit ipinagkait sa kaniya
+                        
+                        Ang dating tinitingala ngayo'y hindi na niya kilala
+                    </p>
+                    <img src="border-bottom.png">
+                </li>
+                <li>
+                    <p>
+                        Umiiyak sa isang sulok
+                        
+                        Ang hawak sa kaniyang ulo'y itinutok
+                        
+                        Bumilang ng isa, dalawa, tatlo
+                        
+                        Tsaka kinalabit ang gatilyo
+                    </p>
+                    <img src="border-bottom.png">
+                </li>
+                <li>
+                    <p>
+                        Nang madapa'y tinulungang bumangon
+                        
+                        Inalalayan kasabay ng pagtakbo ng panahon
+                        
+                        Dumating ang araw na sila'y nanumpa
+                        
+                        Sa harap ng altar ang puso nila'y pinag-isa
+                    </p>
+                    <img src="border-bottom.png">
+                </li>
+                <li>
+                    <p>
+                        Tanging kulay ay itim at puti
+                        
+                        Dumating ka't ang mga ulap tinupi
+                        
+                        Lumitaw ang pitong kulay
+                        
+                        At kaniyang isinalaysay
+                        
+                        Narito para sa'yo
+                        
+                        Parating nakagabay
+                    </p>
+                    <img src="border-bottom.png">
+                </li>
+                <li>
+                    <p>
+                        Siya ang sanhi ng sakit
+                        
+                        Ngunit pilit na kumapit
+                        
+                        Ang pagbitaw ay katumbas ng pagpanaw
+                        
+                        Hindi bumitaw subalit binitawan
+                        
+                        Nagluksa't tinabunan
+                    </p>
+                    <img src="border-bottom.png">
+                </li>
+                <li>
+                    <p>
+                        Ang sugat na inukit
+                        
+                        Naghilom subalit nag-iwan ng marka
+                        
+                        Tinago, nakita at winikang tanggap niya
+                        
+                        Minahal nang buo 
+                        
+                        Pinagsigawan sa mundo
+                    </p>
+                    <img src="border-bottom.png">
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <section class="useful-links">
+                <h2>Useful Links <span style="font-size:12px">(Affiliate)</span></h2>
+                <div class="links">
+                <a href="javascript:void(0)" onclick="alert('Kulit ah? Haha')">Wala pa</a>
+                <a href="javascript:void(0)" onclick="alert('Kulit ah? Haha')">Wala pa</a>
+                <a href="javascript:void(0)" onclick="alert('Kulit ah? Haha')">Wala pa</a>
+                <a href="javascript:void(0)" onclick="alert('Kulit ah? Haha')">Wala pa</a>
+                </div>
+            </section>
+            <h3>Oshiwa</h3>
+        </footer>
+        <script>
+            function showMenu(){
+                let x = document.getElementById("menu");
+                if (x.style.display === "grid"){
+                    x.style.display = "none";
+                }else{
+                    x.style.display = "grid";
+                }
+            }
+        </script>
+    </body>
+</html>
