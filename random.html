@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Random - Oshiwa's Dump">
+        <meta property="og:image" content="">
+        <meta property="og:description"content="">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://oshiwa.github.io/random.html">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira:900,400">
+        <link rel="icon" href="" type="image/jpeg">
+        <title>Random - Oshiwa's Dump</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: Saira;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                background: linear-gradient(to bottom, #333, #222, #111);
+            }
+            img{
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                background: linear-gradient(to right, #222, #111);
+            }
+            header h1{
+                padding: 10px;
+                color: #fff;
+            }
+            nav ul{
+                display: flex;
+                width: 100%;
+                box-shadow: 1px 1px 3px 1px #111;
+            }
+            nav ul li{
+                width: 100%;
+            }
+            nav ul li a{
+                display: flex;
+                color: #fff;
+                width: 100%;
+                font-size: 24px;
+                padding: 12px;
+                justify-content: center;
+            }
+            main{
+                padding: 12px;
+            }
+            main ul{
+                display: grid;
+                gap: 12px;
+            }
+            main h2{
+                background: linear-gradient(to right, #222, #111);
+                box-shadow: 1px 1px 3px 1px #000;
+                text-align: center;
+                padding: 10px;
+                color: #fff;
+                margin-bottom: 12px;
+                margin-top: 12px;
+                border-top: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            .poem-container{
+                box-shadow: 1px 1px 3px 1px #000;
+                white-space: pre-line;
+                padding: 24px;
+                color: #fff;
+            }
+            .video-container{
+                padding-top: 56.25%;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+            }
+            .video-container iframe{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .pop-up{
+                box-shadow: 1px 1px 3px 1px #000;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(to bottom, #333, #222);
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                animation: fade 1s ease-in;
+                display: none;
+                width: 75%;
+                z-index: 5;
+            }
+            .pop-up button{
+                position: absolute;
+                padding: 8px 12px;
+                right: 5;
+                top: 5;
+            }
+            .pop-up-content h3{
+                padding: 12px;
+                border-bottom: 2px solid #fff;
+            }
+            .pop-up-content p{
+                padding: 14px;
+                font-size: 12px;
+            }
+            @keyframes fade{
+                0%{opacity:0;}
+                100%{opacity:1;}
+            }
+            footer{
+                background: #000;
+                box-shadow: 1px 1px 3px 1px #000;
+                text-align: center;
+                padding: 10px;
+                color: #fff;
+            }
+        @media screen and (min-width: 720px){
+            main ul{
+                grid-template-columns: auto auto;
+                align-items: center;
+            }
+        }
+        </style>
+        <script src="https://kit.fontawesome.com/05b994aae7.js" crossorigin="anonymous"></script>
+    </head>
+    <body oncontextmenu="return false" onload="popup()">
+        <header>
+            <h1>Oshiwa's Dump</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="follow-me.html"><i class="fa-solid fa-user-group"></i></a></li>
+                    <li><a href="support-me.html"><i class="fa-solid fa-earth-americas"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>KPOP MV</h2>
+            <ul>
+                <li>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/selkk5MpGVo" frameborder="0" loading="lazy" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <li>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/P9tKTxbgdkk" frameborder="0" loading="lazy" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <li>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/pyf8cbqyfPs" frameborder="0" loading="lazy" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <li>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/POe9SOEKotk" frameborder="0" loading="lazy" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <li>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/Km71Rr9K-Bw" frameborder="0" loading="lazy" allowfullscreen></iframe>
+                    </div>
+                </li>
+            </ul>
+            <h2>POEM DUMP BUT NOT MINE</h2>
+            <ul>
+                <li class="poem-container">
+                    <h3>TWO ANGELS</h3>
+                    <div class="poem">
+Two angels, one of Life and one of Death,
+Passed o'er our village as the morning broke;
+The dawn was on their faces, and beneath,
+The sombre houses hearsed with plumes of smoke.
+
+Their attitude and aspect were the same,
+Alike their features and their robes of white;
+But one was crowned with amaranth, as with flame,
+And one with asphodels, like flakes of light.
+
+I saw them pause on their celestial way;
+Then said I, with deep fear and doubt oppressed,
+"Beat not so loud, my heart, lest thou betray
+The place where thy beloved are at rest!"
+
+And he who wore the crown of asphodels,
+Descending, at my door began to knock,
+And my soul sank within me, as in wells
+The waters sink before an earthquake's shock.
+
+I recognized the nameless agony,
+The terror and the tremor and the pain,
+That oft before had filled or haunted me,
+And now returned with threefold strength again.
+
+The door I opened to my heavenly guest,
+And listened, for I thought I heard God's voice;
+And, knowing whatsoe'er he sent was best,
+Dared neither to lament nor to rejoice.
+
+Then with a smile, that filled the house with light,
+"My errand is not Death, but Life," he said;
+And ere I answered, passing out of sight,
+On his celestial embassy he sped.
+
+'T was at thy door, O friend! and not at mine,
+The angel with the amaranthine wreath,
+Pausing, descended, and with voice divine,
+Whispered a word that had a sound like Death.
+
+Then fell upon the house a sudden gloom,
+A shadow on those features fair and thin;
+And softly, from that hushed and darkened room,
+Two angels issued, where but one went in.
+
+All is of God! If he but wave his hand,
+The mists collect, the rain falls thick and loud,
+Till, with a smile of light on sea and land,
+Lo! he looks back from the departing cloud.
+
+Angels of Life and Death alike are his;
+Without his leave they pass no threshold o'er;
+Who, then, would wish or dare, believing this,
+Against his messengers to shut the door?
+                    </div>
+                </li>
+                <li class="poem-container">
+                    <h3>DAYLIGHT AND MOONLIGHT</h3>
+                    <div class="poem">
+In broad daylight, and at noon,
+Yesterday I saw the moon
+Sailing high, but faint and white,
+As a school-boy's paper kite.
+
+In broad daylight, yesterday,
+I read a Poet's mystic lay;
+And it seemed to me at most
+As a phantom, or a ghost.
+
+But at length the feverish day
+Like a passion died away,
+And the night, serene and still,
+Fell on village, vale, and hill.
+
+Then the moon, in all her pride,
+Like a spirit glorified,
+Filled and overflowed the night
+With revelations of her light.
+
+And the Poet's song again
+Passed like music through my brain.
+Night interpreted to me
+All its grace and mystery.
+                    </div>
+                </li>
+                <li class="poem-container">
+                    <h3>SONG OF THE HEAVENS</h3>
+                    <div class="poem">
+SONG I.
+
+Oh, most beautiful summer night,
+Enraptured my soul with thy light;
+⁠In the daytime ’tis suffocating,
+⁠But evening is invigorating.
+
+From the vaulted heavens, the moon,
+Heaven’s old father, very soon,
+⁠With silvery light all over the world,
+⁠Will shine, changing water to pearl.
+
+Around him then his children small,
+The little stars good-hearted all,
+⁠With their golden voices seem to say,
+⁠To-morrow will be a lovely day.
+
+SONG VI.
+
+Believe me, the bright stars also feel pain,
+Much, very much, troubles them sore
+And they feel, and can condole with our pain,
+⁠In this tearful vale of sorrow.
+
+They also have their work, around the sun,
+Round, round they spin, and glide and shine;
+About a hundred thousand miles they run,
+⁠Paid only by a span of life.
+
+
+​
+They also have to work themselves to death,
+And martyrize their golden forms.
+The bright haze we sometimes see is their breath,
+⁠Which we vaguely call falling stars.
+
+SONG XII.
+
+All the bright, fiery stars,
+⁠That cluster round the moon.
+Once flew away from the sun
+⁠To shine on our world like stars,
+But they were cradled in the sun.
+
+All the bright, fiery stars,
+⁠After their destined time,
+Must fly away from our sky,
+⁠For the sun will be their grave,
+And there the gleaming stars shall die.
+
+SONG XXXVII.
+
+The voice of the prophet said,
+⁠That all that live must also die.
+Oh, yes, we know ’tis truth he said—
+⁠Before the world dies, we must die.
+
+Whatever blooms will also fade—
+⁠What comes to earth, must from earth go—
+The world’s poor knowledge, it will fade,
+⁠Like any white rose that doth blow.
+
+And so the thought of death should not
+⁠Stab our poor weary human heart.
+We live, and outlive, ’tis our lot
+⁠Examples to be, ’tis our part.
+
+Before birth, we knew not the earth—
+⁠Nor know we now its secret power.
+We cannot even know our earth—
+⁠What know we of God’s mighty power.
+
+
+​
+And should calamity overtake
+⁠Our world well, God is mighty still.
+He still can save us for His sake,
+⁠All might is His, if He but will.
+
+We know that we must die so live
+⁠That when we die our lowly grave
+Be honored by the souls that live,
+⁠Let fame attend us to our grave.
+                    </div>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <div class="pop-up">
+                <button id="close"><i class="fa-solid fa-xmark"></i></button>
+                <div class="pop-up-content">
+                    <h3>NOTICE</h3>
+                    <p>This page contains advertisements which I do not control. Advertisements are present to support me on what I am doing here. Hope you understand, thank you ~ Also, most content available on this page are under public domain, feel free to use them too (except for MVs).</p>
+                </div>
+            </div>
+            <h5>© OSHIWA</h5>
+        </footer>
+        <script>
+            function popup(){
+                let popup = document.querySelector('.pop-up');
+                setTimeout(() => {
+                    popup.style.display = "block";
+                }, 0)
+            }
+            document.querySelector('#close').addEventListener('click', close);
+            function close(){
+                document.querySelector('.pop-up').style.display = "none";
+            }
+        </script>
+    </body>
+</html>
